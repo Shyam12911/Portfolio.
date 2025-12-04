@@ -1,0 +1,82 @@
+:root {
+  --bg: #0b0f19;
+  --text: #e5e7ff;
+  --primary: #6a5acd;
+  --neon1: #ff0099;
+  --neon2: #00eaff;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; font-family:Poppins,sans-serif;}
+
+body { background:var(--bg); color:var(--text); }
+
+.header {
+  position:fixed; top:0; width:100%;
+  padding:18px 45px;
+  display:flex; justify-content:space-between; align-items:center;
+  background:rgba(255,255,255,0.05); backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  z-index:1000;
+}
+
+.logo {
+  font-size:28px; font-weight:700;
+  background:linear-gradient(90deg,var(--neon1),var(--neon2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+.nav a {
+  margin-left:28px; color:var(--text); text-decoration:none;
+  font-weight:500; transition:0.25s;
+}
+.nav a:hover { color:var(--neon1); }
+
+.hero {
+  height:100vh; padding-top:150px; text-align:center;
+  background:radial-gradient(circle at center,
+      rgba(255,0,153,0.3), transparent 60%);
+}
+
+.hero h1 { font-size:60px; font-weight:700; }
+.hero h2 { font-size:30px; margin-top:10px; opacity:0.85; }
+
+.btn {
+  display:inline-block; margin-top:40px; padding:14px 34px;
+  border-radius:50px; font-weight:700;
+  background:linear-gradient(90deg,var(--neon1),var(--neon2));
+  color:#000; text-decoration:none;
+}
+
+section { padding:120px 60px; max-width:1100px; margin:auto; }
+
+h2 {
+  font-size:40px; margin-bottom:25px;
+  background:linear-gradient(90deg,var(--neon1),var(--neon2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+
+.skill-grid, .project-grid {
+  display:grid; gap:30px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.card, .project-card {
+  padding:25px; border-radius:14px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter:blur(8px);
+  transition:0.3s;
+}
+
+.card:hover, .project-card:hover {
+  transform:translateY(-8px);
+  border-color:var(--neon1);
+  box-shadow:0 0 18px var(--neon1);
+}
+
+.link { color:var(--neon2); font-weight:600; }
+
+.footer {
+  text-align:center; padding:25px; margin-top:80px;
+  background:rgba(255,255,255,0.05);
+}
