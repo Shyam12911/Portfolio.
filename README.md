@@ -1,2 +1,1 @@
-# Portfolio.
-A single-page personal portfolio built with HTML, CSS, and JavaScript. It presents identity, skills, projects, and contact details in a responsive layout. Structure includes a fixed header, hero section, about block, skill grid, project cards, and a contact footer.
+A single-page personal portfolio built with HTML, CSS, and JavaScript. It presents identity, skills, projects, and contact details in a responsive layout. Structure includes a fixed header, hero section, about block, skill grid, project cards, and a contact footer. CSS handles layout, spacing, and color system; JavaScript handles the mobile navigation toggle. Purpose: provide a clean public profile for work samples and professional links.
